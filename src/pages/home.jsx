@@ -21,7 +21,7 @@ class Home extends React.Component {
 class DisciplineCards extends React.Component {
     render() {
         const disciplines = [
-            {'id':1, 'name': 'Português', 'link': '/gym/history' },
+            {'id':1, 'name': 'Português', 'link': '/gym/portuguese' },
             {'id':2, 'name': 'Inglês', 'link': '/gym/english' },
             {'id':3, 'name': 'Matemática', 'link': '/gym/math' },
             {'id':4, 'name': 'Física', 'link': '/gym/physics' },
