@@ -1,14 +1,12 @@
 import React from "react";
+import Header from "../components/header";
 
 class Home extends React.Component {
     render() {
 
         return (
             <div>
-                <div>
-                    <h1>MELVIN</h1>
-                    <hr></hr>
-                </div>
+                <Header/>
                 <div>
                     <h2>O que gostarias de estudar agora?</h2>
                     <DisciplineCards/>

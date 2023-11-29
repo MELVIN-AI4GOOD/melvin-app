@@ -1,0 +1,12 @@
+.header-div {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-tone2);
+}
+
+.header-title {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
