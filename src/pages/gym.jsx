@@ -6,6 +6,7 @@ import QuestionFrame from "../components/question";
 import ControlMenu from "../components/controlMenu";
 
 import '../css/gym.css';
+import Footer from "../components/footer";
 
 const question = {
     'statement': `O Rio de Janeiro tem projeção imediata no próprio estado e no Espírito Santo, em parcela do sul do estado 
@@ -26,11 +27,15 @@ const question = {
 class Gym extends React.Component {
     render() {
         return (
-            <div className='gym-content'>
-                <ResumeMenu data={this.props.data}/>
-                <QuestionFrame question={question}/>
-                <ControlMenu/>
+            <div>
+                <div className='gym-content'>
+                    <ResumeMenu data={this.props.data}/>
+                    <QuestionFrame question={question}/>
+                    <ControlMenu/>
+                </div>
+                <Footer/>
             </div>
+
         );
     }
 }

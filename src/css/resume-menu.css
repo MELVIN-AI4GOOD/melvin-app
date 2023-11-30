@@ -1,7 +1,18 @@
 .resume-menu-div {
-    width: 20vw;
+    width: 25vw;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
     background-color: var(--light-blue);
+}
+
+.resume-menu-div .questions-asked-div, .hit-rate-div{
+    width: 20vw;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.resume-menu-div .strengths-div, .weaknesses-div {
+    width: 20vw;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    width: 20vw;
 }

@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home name='Henrique'/>} />
         <Route path='/gym/portuguese' element={<PortugueseGym/>} />
         <Route path='/gym/english' element={<EnglishGym/>} />
         <Route path='/gym/math' element={<MathGym/>} />

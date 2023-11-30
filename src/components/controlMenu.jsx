@@ -6,7 +6,7 @@ class ControlMenu extends React.Component {
     render() {
         return (
             <div className='control-menu-div'>
-                <h2>Filtros</h2>
+                <p>Filtros</p><hr></hr>
                 
             </div>
         );

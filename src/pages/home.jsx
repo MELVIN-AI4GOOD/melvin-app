@@ -1,17 +1,18 @@
 import React from "react";
 import Header from "../components/header";
 import '../css/home.css';
+import Footer from "../components/footer";
 
 class Home extends React.Component {
     render() {
-
         return (
             <div>
                 <Header/>
                 <div className='content-container'>
-                    <h2>O que gostarias de estudar agora?</h2>
+                    <p className='instruction'>Seja bem vindo, {this.props.name}. O que gostarias de estudar agora?</p>
                     <DisciplineCards/>
                 </div>
+                <Footer/>
             </div>
         );
     }

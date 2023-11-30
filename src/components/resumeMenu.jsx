@@ -1,26 +1,30 @@
 import React from "react";
 
 import '../css/resume-menu.css';
+import '../css/tag.css';
 
 class ResumeMenu extends React.Component {
     render() {
         return (
             <div className='resume-menu-div'>
                 <div className='questions-asked-div'>
-                    <p>Questões feitas: {this.props.data.questionsAsked}</p><hr></hr>
+                    <p>Suas Questões</p><hr></hr>
+                    <div>
+                        <p>{this.props.data.questionsAsked} feitas</p>
+                        <p>31 acertos</p>
+                    </div>
                 </div>
                 <div className='hit-rate-div'>
                     <p>Índice de Acertos: {this.props.data.hitRate}</p><hr></hr>
                 </div>
                 <div className='strengths-div'>
-                    <p>Pontos Fortes</p>
+                    <p>Pontos Fortes</p><hr></hr>
                     <Tags tags={this.props.data.strengths}/>
-                    <hr></hr>
                 </div>
-                <div className='weaknesses-div'></div>
-                <p>Pontos Fracos</p>
-                <Tags tags={this.props.data.weaknesses}/>
-                <hr></hr>
+                <div className='weaknesses-div'>
+                    <p>Pontos Fracos</p><hr></hr>
+                    <Tags tags={this.props.data.weaknesses}/>
+                </div>
             </div>
         );
     }
@@ -30,7 +34,7 @@ class Tags extends React.Component {
     render() {
         return (
             <div className='subject-tags-div'>
-                {this.props.tags.map(tag => (<Tag name={tag}/>))}
+                {this.props.tags.map((tag, index) => (<Tag name={tag} key={index}/>))}
             </div>
         );
     }

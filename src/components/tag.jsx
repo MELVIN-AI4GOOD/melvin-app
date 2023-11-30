@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../css/tag.css';
+
 class Tags extends React.Component {
     render() {
         return (

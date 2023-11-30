@@ -1,0 +1,15 @@
+.footer-div {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--super-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div .copyright {
+    font-size: small;
+    text-align: center;
+}

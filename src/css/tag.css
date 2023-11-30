@@ -1,0 +1,17 @@
+.subject-tags-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+}
+
+.subject-tag-div {
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(82, 0, 102);
+    background-image: linear-gradient(0, var(--dark-purple), var(--light-purple));
+    border-radius: 15px;
+    font-weight: bold;
+}
