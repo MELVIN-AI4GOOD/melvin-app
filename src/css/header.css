@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--black-tone2);
+    background-color: var(--black);
 }
 
 .header-title {
