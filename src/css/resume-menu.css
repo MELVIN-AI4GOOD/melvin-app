@@ -1,6 +1,6 @@
 .resume-menu-div {
+    padding-top: 20px;
     width: 25vw;
-    height: 90vh;
     background-color: var(--light-blue);
 }
 
@@ -15,4 +15,8 @@
     padding-left: 20px;
     margin-bottom: 10px;
     width: 20vw;
+}
+
+.resume-menu-div .section-title {
+    text-align: center;
 }

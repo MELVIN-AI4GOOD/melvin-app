@@ -41,30 +41,33 @@ class QuestionFrame extends React.Component {
         
 
         return (
-            <div className='question-frame-div'>
-                <div className='statement'>
-                    <p>{statement}</p>
-                </div>
-                <div className='alternatives-div'>
-                    {options.map((option, index) => (
-                        <div key={index} className='alternative-div'>
-                            <label>
-                                <input
-                                    type="radio"
-                                    value={option}
-                                    checked={selectedOption === option}
-                                    onChange={() => this.handleOptionChange(option)}
-                                    disabled={answered}
-                                />
-                                {option}
-                            </label>
-                        </div>
-                    ))}
-                </div>
-                <div className='answer-button-div'>
-                    <button onClick={this.handleAnswer} disabled={answered} className='answer-button'>
-                        Responder
-                    </button>
+            <div>
+                <h2 className='subject-title'>História</h2>
+                <div className='question-frame-div'>
+                    <div className='statement'>
+                        <p>{statement}</p>
+                    </div>
+                    <div className='alternatives-div'>
+                        {options.map((option, index) => (
+                            <div key={index} className='alternative-div'>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        value={option}
+                                        checked={selectedOption === option}
+                                        onChange={() => this.handleOptionChange(option)}
+                                        disabled={answered}
+                                    />
+                                    {option}
+                                </label>
+                            </div>
+                        ))}
+                    </div>
+                    <div className='answer-button-div'>
+                        <button onClick={this.handleAnswer} disabled={answered} className='answer-button'>
+                            Responder
+                        </button>
+                    </div>
                 </div>
             </div>
         );

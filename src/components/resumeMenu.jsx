@@ -8,21 +8,23 @@ class ResumeMenu extends React.Component {
         return (
             <div className='resume-menu-div'>
                 <div className='questions-asked-div'>
-                    <p>Suas Questões</p><hr></hr>
+                    <p className='section-title'>Suas Questões</p><hr></hr>
                     <div>
-                        <p>{this.props.data.questionsAsked} feitas</p>
-                        <p>31 acertos</p>
+                        <p>{this.props.data.questionsAsked}</p>
                     </div>
                 </div>
                 <div className='hit-rate-div'>
-                    <p>Índice de Acertos: {this.props.data.hitRate}</p><hr></hr>
+                    <p className='section-title'>Índice de Acertos</p><hr></hr>
+                    <div>
+                        <p>{100*this.props.data.hitRate}%</p>
+                    </div>
                 </div>
                 <div className='strengths-div'>
-                    <p>Pontos Fortes</p><hr></hr>
+                    <p className='section-title'>Pontos Fortes</p><hr></hr>
                     <Tags tags={this.props.data.strengths}/>
                 </div>
                 <div className='weaknesses-div'>
-                    <p>Pontos Fracos</p><hr></hr>
+                    <p className='section-title'>Pontos Fracos</p><hr></hr>
                     <Tags tags={this.props.data.weaknesses}/>
                 </div>
             </div>

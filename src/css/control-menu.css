@@ -2,3 +2,125 @@
     width: 25vw;
     background-color: var(--light-blue);
 }
+
+.control-menu-div .buttons-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tags, .recommendation-control, .hint-box {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.control-menu-div .tags {
+    margin-top: 20px;
+}
+
+.recommendation-control {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.switch {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.switch p{
+    margin-left: 20px;
+}
+
+.switch-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch-label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.hint-box .text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.hint-box input[type='text'] {
+    margin-bottom: 10px;
+    height: 120px;
+}
+
+.control-menu-div button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    padding: 10px;
+    background-color: var(--dark-purple);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.control-menu-div button:hover {
+    background-color: var(--light-purple);
+}

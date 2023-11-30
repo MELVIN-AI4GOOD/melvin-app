@@ -14,7 +14,6 @@ class HistoryGym extends React.Component {
 
         return (
             <div>
-                <Header/>
                 <div>
                     <Gym data={data}/>
                 </div>
