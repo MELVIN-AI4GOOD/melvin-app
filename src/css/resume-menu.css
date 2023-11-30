@@ -1,0 +1,7 @@
+.resume-menu-div {
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+}

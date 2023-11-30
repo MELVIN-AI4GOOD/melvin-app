@@ -1,0 +1,24 @@
+.question-frame-div {
+    width: 45vw;
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.question-frame-div .statement {
+    text-align: justify;
+}
+
+.question-frame-div .alternatives-div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-frame-div .alternative-div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+}

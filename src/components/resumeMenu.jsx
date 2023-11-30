@@ -1,9 +1,11 @@
 import React from "react";
 
+import '../css/resume-menu.css';
+
 class ResumeMenu extends React.Component {
     render() {
         return (
-            <div className='resume-menu'>
+            <div className='resume-menu-div'>
                 <div className='questions-asked-div'>
                     <p>Questões feitas: {this.props.data.questionsAsked}</p><hr></hr>
                 </div>
