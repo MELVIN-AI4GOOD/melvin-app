@@ -1,0 +1,33 @@
+.discipline-cards-div {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.discipline-card-div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(89, 0, 255);
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+.discipline-card-div a {
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.discipline-card-div a:hover {
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}

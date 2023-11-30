@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/header";
+import '../css/home.css';
 
 class Home extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Header/>
-                <div>
+                <div className='content-container'>
                     <h2>O que gostarias de estudar agora?</h2>
                     <DisciplineCards/>
                 </div>
@@ -36,7 +37,7 @@ class DisciplineCards extends React.Component {
         ));
 
         return (
-            <div>
+            <div className='discipline-cards-div'>
                 {disciplinesCards}
             </div>
         );
@@ -46,7 +47,7 @@ class DisciplineCards extends React.Component {
 class DisciplineCard extends React.Component {
     render() {
         return (
-            <div>
+            <div className='discipline-card-div'>
                 <a href={this.props.link}>{this.props.name}</a>
             </div>
         );
