@@ -4,13 +4,12 @@ import '../css/control-menu.css';
 
 class ControlMenu extends React.Component {
     render() {
-        const tags = ['história', 'modernidade', 'revolução industrial', 'guerra do ópio', 'mundo árabe', 'guerra do peloponeso',]
         return (
             <div className='control-menu-div'>
                 <div className='tags'>
                     <p>Tags</p>
                     <hr></hr>
-                    <Tags tags={tags}></Tags>
+                    <Tags tags={this.props.tags}></Tags>
                 </div>
                 <div className='recommendation-control'>
                     <p>Controles</p>

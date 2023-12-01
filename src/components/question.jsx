@@ -42,7 +42,7 @@ class QuestionFrame extends React.Component {
 
         return (
             <div>
-                <h2 className='subject-title'>História</h2>
+                <h2 className='subject-title'>{this.props.subject}</h2>
                 <div className='question-frame-div'>
                     <div className='statement'>
                         <p>{statement}</p>

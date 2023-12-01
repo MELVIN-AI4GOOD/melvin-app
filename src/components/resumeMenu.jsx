@@ -10,13 +10,13 @@ class ResumeMenu extends React.Component {
                 <div className='questions-asked-div'>
                     <p className='section-title'>Suas Questões</p><hr></hr>
                     <div>
-                        <p>{this.props.data.questionsAsked}</p>
+                        <p>{this.props.data.questionsAsked} realizadas!</p>
                     </div>
                 </div>
                 <div className='hit-rate-div'>
                     <p className='section-title'>Índice de Acertos</p><hr></hr>
                     <div>
-                        <p>{100*this.props.data.hitRate}%</p>
+                        <p>{100*this.props.data.hitRate}% de acerto!</p>
                     </div>
                 </div>
                 <div className='strengths-div'>
